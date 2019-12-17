@@ -46,9 +46,13 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Bonjour,</div>
-                <div class="intro-heading">Je m'appelle Florent Gonon, bienvenue sur mon CV</div>
-                <a href="#services" class="page-scroll btn btn-xl">BLABLABLA</a>
+                <!-- <div class="intro-lead-in">Bonjour</div> -->
+                <div class="intro-heading">Florent Gonon</div>
+                <div class="intro-lead-in">Développeur Web en Freelance</div>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">BLABLABLA</a> -->
+            </div>
+            <div class="mouse-scroll">
+              <div class="mouse"></div>
             </div>
         </div>
     </header>
@@ -58,33 +62,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Mes services</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-tree-conifer"></i>
+                        <%= image_tag("backend.png", :class => "img-services", height: "100%") %>
                     </span>
-                    <h4 class="service-heading">Here is a pokok</h4>
+                    <h4 class="service-heading">Backend</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-heart"></i>
+                        <%= image_tag("computer.png", :class => "img-services", height: "100%") %>
                     </span>
-                    <h4 class="service-heading">Here's a heart</h4>
+                    <h4 class="service-heading">Frontend Design</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-tint"></i>
+                        <%= image_tag("consultation.png", :class => "img-services", height: "100%") %>
                     </span>
-                    <h4 class="service-heading">Waterfall maybe?</h4>
+                    <h4 class="service-heading">Conseils</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
             </div>
@@ -141,7 +142,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Ajmal, I need help to learn how to tweak this part. I don't want this timeline crap. Haha.</h3>
+                    <h3 class="section-subheading text-muted">Mes études et mon parcours professionnel</h3>
                 </div>
             </div>
             <div class="row">
@@ -149,67 +150,99 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/1.jpg" alt=""> -->
+                                <%= image_tag("students2.png", :class => "img-works", height: "60%") %>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>2013 - 2014</h4>
+                                    <h4 class="subheading">Lycée Victor Hugo – Hennebont (56700)</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Obtention du Baccalauréat – Série Economique et Sociale</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/2.jpg" alt=""> -->
+                                <%= image_tag("students2.png", :class => "img-works", height: "60%") %>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4>2014 - 2016</h4>
+                                    <h4 class="subheading">Lycée d’Enseignement Agricole Privé Kerplouz LaSalle – Auray - 56400)</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Obtention du Brevet de Technicien Supérieur en Gestion et Protection de la Nature</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
+                                <%= image_tag("students2.png", :class => "img-works", height: "60%") %>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>Mai 2015 - Juillet 2015</h4>
+                                    <h4 class="subheading">Stagiaire polyvalent - Association Ikamaperu - Pérou (Lagunas)</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Etude comportementale des primates et oiseaux, étude phytosociologique comparative entre deux habitats, rôle de soigneur animalier, éducation environnementale auprès des populations locales (film/débat)</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <!-- <img class="img-circle img-responsive" src="img/about/4.jpg" alt=""> -->
+                                <%= image_tag("suitcase1.png", :class => "img-works", height: "60%") %>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4>Période de vacances scolaire de 2015 - 2017</h4>
+                                    <h4 class="subheading">Agent polyvalent - SAS Etablissements Le Gac Didier – Baud (56150)</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Standard téléphonique, informatisation des devis établis pour la gestion des pièces référencées, réalisation de bons de livraisons, usinage de diverses pièces</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
+                                <%= image_tag("suitcase1.png", :class => "img-works", height: "60%") %>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Septembre 2016 - Juillet 2019</h4>
+                                    <h4 class="subheading">Assistant d'Education - Collège Cheverus – Bordeaux (33000)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Surveillance et encadrement des élèves, mise en place permanente d’actions de médiation, participation au travail de la Vie Scolaire, participation aux tâches liées à la vie de l’établissement, participation au dispositif « Devoirs- faits »</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <!-- <img class="img-circle img-responsive" src="img/about/4.jpg" alt=""> -->
+                                <%= image_tag("suitcase1.png", :class => "img-works", height: "60%") %>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Octobre 2019 - Décembre 2019</h4>
+                                    <h4 class="subheading">Le Wagon Bordeaux - Formation Développeur Web Fullstack</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Outils et workflow de développeur, utilisation du terminal et des outils de versionning (Git / GitHub), programmation orientée objet en Ruby et son framework Rails (mais aussi Javascript, HTML, CSS), conception de schéma DB (utilisation des requêtes SQL) et connection de cette dernière à Ruby avec un ORM (Active Records)</p>
+                                </div>
                             </div>
                         </li>
+                        <!-- <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4><br>...</h4>
+                            </div>
+                        </li> -->
                     </ul>
                 </div>
             </div>
