@@ -171,109 +171,84 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-.navbar-default {
-    border-color: transparent;
-    background-color: #222;
+
+
+
+
+
+
+.navbar {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  padding: 20px 0;
+  text-transform: uppercase;
+  color: #FFF !important;
 }
 
-.navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #A790A5;
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-    color: #875C74;
-}
-
-.navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #1ee2e7;
-    background-color: #1ee2e7;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #1ee2e7;
-}
-
-.navbar-default .nav li a {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
-    outline: 0;
-    color: #1ee2e7;
-}
-
-.navbar-default .navbar-nav>.active>a {
+@media (min-width: 768px) {
+  .navbar-fixed-top {
     border-radius: 0;
-    color: #fff;
-    background-color: #1ee2e7;
+    position: fixed;
+    right: 0;
+    left: 40px;
+    z-index: 1030;
+  }
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #17d0d5;
+.navbar-custom .navbar-brand {
+  font-family: 'Montserrat';
+  color: #FFF;
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-        padding: 25px 0;
-        border: 0;
-        background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 20px;
 
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
+  &:hover  {
+    color: white !important;
+  }
+}
 
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
-    }
+.navbar-lewagon {
+  justify-content: space-between;
+  background: transparent;
+}
 
-    .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
-    }
+.collapse {
+  padding: 13px 0 15px 450px;
 
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+  a {
+    padding-right: 40px;
+  }
+}
+
+
+
+#intro {
+  padding: 90px 0;
 }
 
 header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(https://images.unsplash.com/photo-1507011586715-8afbf551622b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-image: url(https://images.unsplash.com/photo-1498452572341-c087c3ee25fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ0MTA5fQ&auto=format&fit=crop&w=2100&q=80);
     background-position: bottom;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 85vh;
 }
 
 header .intro-text {
@@ -300,8 +275,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 18vh;
+        padding-bottom: 8vh;
     }
 
     header .intro-text .intro-lead-in {
@@ -858,7 +833,7 @@ section h3.section-subheading {
 
 section#contact {
     background-color: #222;
-    background-image: url(https://images.unsplash.com/photo-1517824806704-9040b037703b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-image: url(https://images.unsplash.com/photo-1484074536266-b2146923b337?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
     // background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -925,6 +900,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #012235;
 }
 
 footer span.copyright {
@@ -932,6 +908,7 @@ footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
+    color: white;
 }
 
 footer ul.quicklinks {
