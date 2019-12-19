@@ -196,7 +196,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 0;
     position: fixed;
     right: 0;
-    left: 40px;
+    left: 0;
     z-index: 1030;
   }
 }
@@ -220,7 +220,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: transparent;
+  background: black;
+  width: 100%;
 }
 
 .collapse {
@@ -241,8 +242,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(https://images.unsplash.com/photo-1498452572341-c087c3ee25fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ0MTA5fQ&auto=format&fit=crop&w=2100&q=80);
-    background-position: bottom;
+    background-image: linear-gradient(rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1526576100506-af9d70497856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-position: center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -832,10 +833,10 @@ section h3.section-subheading {
 
 
 section#contact {
-    background-color: #222;
-    background-image: url(https://images.unsplash.com/photo-1484074536266-b2146923b337?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1542393545-10f5cde2c810?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80);
     // background-size: contain;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -900,7 +901,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
-    background-color: #012235;
+    background-color: transparent;
 }
 
 footer span.copyright {
@@ -908,7 +909,7 @@ footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
-    color: white;
+    color: #777;
 }
 
 footer ul.quicklinks {
