@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -121,14 +125,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #A790A5;
+    border-color: black;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #A790A5;
+    background-color: black;
 }
 
 .btn-xl:hover,
@@ -136,9 +140,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #875C74;
+    border-color: #8C488E;
     color: #fff;
-    background-color: #875C74;
+    background-color: #8C488E;
 }
 
 .btn-xl:active,
@@ -243,6 +247,7 @@ header {
     color: #fff;
     background-attachment: scroll;
     background-image: linear-gradient(rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1526576100506-af9d70497856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -546,7 +551,7 @@ section h3.section-subheading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #875C74;
+    background: #8C488E;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -835,6 +840,7 @@ section h3.section-subheading {
 section#contact {
     background-color: black;
     background-image: linear-gradient(rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1542393545-10f5cde2c810?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80);
+    background-attachment: fixed;
     // background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -909,7 +915,7 @@ footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
-    color: #777;
+    color: black;
 }
 
 footer ul.quicklinks {
