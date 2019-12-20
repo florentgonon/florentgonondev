@@ -125,14 +125,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: black;
+    border-color: #0B0821;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: black;
+    background-color: #0B0821;
 }
 
 .btn-xl:hover,
@@ -140,9 +140,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #8C488E;
+    border-color: #8065A4;
     color: #fff;
-    background-color: #8C488E;
+    background-color: #8065A4;
 }
 
 .btn-xl:active,
@@ -509,7 +509,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 120px 0;
     }
 }
 
@@ -907,7 +907,8 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
-    background-color: transparent;
+    background-color: #0B0821;
+    border-top: 3px solid white;
 }
 
 footer span.copyright {
@@ -915,7 +916,7 @@ footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
-    color: black;
+    color: white;
 }
 
 footer ul.quicklinks {
@@ -926,30 +927,47 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 
-ul.social-buttons {
-    margin-bottom: 0;
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform:     translateY(-20px);
+    transform:         translateY(-20px)
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    transform:         translateY(-10px)
+  }
 }
 
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+.container-social i {
+  font-size: 60px;
+  color: white;
+  transition: color 0.30s ease-in-out, background-color 0.30s ease-in-out, border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  &:hover {
+    // color: #8c488e;
+    // transition: color 0.30s ease-in-out, background-color 0.30s ease-in-out, border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #1ee2e7;
-}
+
 
 .btn:focus,
 .btn:active,
