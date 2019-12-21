@@ -1,11 +1,9 @@
 import "bootstrap";
+import $ from "jquery";
 
-jQuery(function($) {
-    $(window).scroll(function(){
-        if($(window).scrollTop() >50) {
-              $('.navbar').addClass("solid-nav");
-        }else {
-              $('.navbar').removeClass("solid-nav");
-        }
-    });
-});
+import "../plugins/solidnav.js";
+import "../plugins/sendbtn.js";
+
+import { formspree } from "plugins/formspree.js";
+
+formspree();
