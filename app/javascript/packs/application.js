@@ -1,11 +1,13 @@
 import "bootstrap";
+import $ from "jquery";
+import Typed from 'typed.js';
 
-jQuery(function($) {
-    $(window).scroll(function(){
-        if($(window).scrollTop() >50) {
-              $('.navbar').addClass("solid-nav");
-        }else {
-              $('.navbar').removeClass("solid-nav");
-        }
-    });
-});
+import "../plugins/solidnav.js";
+import "../plugins/sendbtn.js";
+import "../plugins/typed.js";
+
+import { formspree } from "plugins/formspree.js";
+import { typed } from "plugins/typed.js";
+
+formspree();
+typed();
