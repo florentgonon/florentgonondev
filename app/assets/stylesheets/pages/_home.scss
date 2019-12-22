@@ -338,9 +338,10 @@ header {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+}
 
-  .typed {
+.typed {
   position: relative;
   display: inline;
   top: 5px;
