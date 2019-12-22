@@ -1,3 +1,66 @@
+$html: #F44336;
+$css: #2196F3;
+$jquery: #FFCA28;
+$scss: #F06292;
+$javascript: #FFA000;
+$php: #303F9F;
+
+$background-color: #f4f4f4;
+$body-text-color: #212121;
+
+.skills {
+  max-width: 480px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+ dt {
+      &:after {
+        width: 100%;
+        background-color: #e0e0e0;
+        height: 0.5rem;
+        content: "";
+        display: block;
+      }
+    }
+
+dd {
+  background: red;
+  width: 0;
+  height: 0.5rem;
+  position: relative;
+  top: -0.5rem;
+  &.html {
+    background: $html;
+  }
+  &.css {
+    background: $css;
+  }
+  &.jquery {
+    background: $jquery;
+  }
+  &.scss {
+    background: $scss;
+  }
+  &.javascript {
+    background: $javascript;
+  }
+  &.php {
+    background: $php;
+  }
+}
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
