@@ -1,3 +1,49 @@
+#skills {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 6px;
+
+    .bar-container,
+    .bar {
+      position: absolute;
+      left: 0;
+      height: 10px;
+      border-radius: 5px;
+      content: "";
+    }
+
+    .bar-container {
+      bottom: -8px;
+      width: 100%;
+      background-color: #2B3436;
+      text-align: right;
+
+      .bar {
+        top: 0;
+      }
+
+      .pct {
+        position: absolute;
+        top: -19px;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+    }
+  }
+}
+
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
