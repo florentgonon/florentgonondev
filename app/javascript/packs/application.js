@@ -5,6 +5,7 @@ import Typed from 'typed.js';
 import "../plugins/solidnav.js";
 import "../plugins/sendbtn.js";
 import "../plugins/typed.js";
+import "../plugins/skills.js";
 
 import { formspree } from "plugins/formspree.js";
 import { typed } from "plugins/typed.js";
