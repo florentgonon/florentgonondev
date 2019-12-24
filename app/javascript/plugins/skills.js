@@ -4,7 +4,7 @@ var containerHeight = $(window).height() / 2;
 $('.spacer').css("height", containerHeight);
 
 // Find the height of the previous section, half it so when you have scrolled more than half past the section, it triggers the animation
-var x = $('.skills').prev().height() + 1000;
+var x = $('.skills').prev().height() + 1200;
 
 $(window).scroll(function() {
   // checks to see if you have scrolled far enough down to activate the animation

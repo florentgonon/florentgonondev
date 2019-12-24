@@ -1,15 +1,15 @@
-$html: #F44336;
-$css: #2196F3;
-$jquery: #FFCA28;
-$scss: #F06292;
-$javascript: #FFA000;
-$php: #303F9F;
+$ruby: rgb(255, 196, 24);
+$javascript: rgb(166, 130, 255);;
+$postgresql: rgb(18, 173, 6);
+$html: rgb(220, 9, 36);
+$css: rgb(60, 145, 230);
+$wordpress: rgb(233, 76, 130);
 
 $background-color: #f4f4f4;
 $body-text-color: #212121;
 
 .skills {
-  max-width: 480px;
+  width: 80%;
   position: relative;
   margin: 0 auto;
   padding: 0 10px;
@@ -26,35 +26,37 @@ $body-text-color: #212121;
       &:after {
         width: 100%;
         background-color: #e0e0e0;
-        height: 0.5rem;
+        height: 0.6rem;
         content: "";
         display: block;
+        border-radius: 5px;
       }
     }
 
 dd {
   background: red;
   width: 0;
-  height: 0.5rem;
+  height: 0.6rem;
   position: relative;
-  top: -0.5rem;
+  top: -0.6rem;
+  border-radius: 5px;
+  &.ruby {
+    background: $ruby;
+  }
+  &.javascript {
+    background: $javascript;
+  }
+  &.postgresql {
+    background: $postgresql;
+  }
   &.html {
     background: $html;
   }
   &.css {
     background: $css;
   }
-  &.jquery {
-    background: $jquery;
-  }
-  &.scss {
-    background: $scss;
-  }
-  &.javascript {
-    background: $javascript;
-  }
-  &.php {
-    background: $php;
+  &.wordpress {
+    background: $wordpress;
   }
 }
 
