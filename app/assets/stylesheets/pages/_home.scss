@@ -1,77 +1,58 @@
-$ruby: rgb(255, 196, 24);
-$javascript: rgb(166, 130, 255);;
-$postgresql: rgb(18, 173, 6);
-$html: rgb(220, 9, 36);
-$css: rgb(60, 145, 230);
-$wordpress: rgb(233, 76, 130);
-
-$background-color: #f4f4f4;
-$body-text-color: #212121;
-
-
 #skill {
   color: white;
   background-color: #2B3436;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // background-size: cover;
+  // -o-background-size: cover;
   height: 80vh;
+
+  .spacer {
+    height: 0;
+  }
 }
 
-.skills {
-  width: 80%;
-  position: relative;
+#skills {
   margin: 0 auto;
-  padding: 0 10px;
-  &:before, &:after {
-    content: "";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}
+  width: 80%;
+  max-width: 960px;
+  list-style-type: none;
+  padding-left: 0;
 
- dt {
-      &:after {
-        width: 100%;
-        background-color: #5D636A;
-        height: 0.6rem;
-        content: "";
-        display: block;
-        border-radius: 5px;
-      }
+  li {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 6px;
+
+    .bar-container,
+    .bar {
+      position: absolute;
+      left: 0;
+      height: 10px;
+      border-radius: 5px;
+      content: "";
     }
 
-dd {
-  background: red;
-  width: 0;
-  height: 0.6rem;
-  position: relative;
-  top: -0.6rem;
-  border-radius: 5px;
-  &.ruby {
-    background: #9FFCDF;
-  }
-  &.javascript {
-    background: #9FFCDF;
-  }
-  &.postgresql {
-    background: #9FFCDF;
-  }
-  &.html {
-    background: #9FFCDF;
-  }
-  &.css {
-    background: #9FFCDF;
-  }
-  &.wordpress {
-    background: #9FFCDF;
+    .bar-container {
+      bottom: -8px;
+      width: 100%;
+      background-color: #2B3436;
+      text-align: right;
+
+      .bar {
+        top: 0;
+      }
+
+      .pct {
+        position: absolute;
+        top: -19px;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+    }
   }
 }
-
-
 
 
 html {

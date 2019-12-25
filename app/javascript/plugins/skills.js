@@ -1,21 +1,54 @@
-// this has nothing to do with the animation, just forces the window to be a size that allows a scroll
-var containerHeight = $(window).height() / 2;
+function skills() {
 
-$('.spacer').css("height", containerHeight);
+  ;( function( $ ) {
+    $(window).scroll(function() {
+      if($(window).scrollTop() > 900) {
+        "use strict";
+        var $bars = $( ".bar" ),
+          methods = {
+            init: function() {
 
-// Find the height of the previous section, half it so when you have scrolled more than half past the section, it triggers the animation
-var x = $('.skills').prev().height() + 1200;
+              // Bind events
+              methods.bindEvents();
 
-$(window).scroll(function() {
-  // checks to see if you have scrolled far enough down to activate the animation
-  if ($(window).scrollTop() >= x) {
-    //find each element with the class .skill-percent
-    $('.skill-percent').each(function() {
-      // animate
-      $(this).animate({
-        //finds the width from the data-percent attribute
-        width: $(this).data('percent') + '%'
-      }, 1000);
+            },
+
+            bindEvents: function() {
+              // Loop through each of the bars...
+                $bars.each( function() {
+
+                  var $bar = $( this ),
+                    $pct = $bar.find( ".pct" ),
+                    data = $bar.data( "bar" );
+
+                  setTimeout( function() {
+
+                    $bar
+                      .css( "background-color", data.color )
+                      .animate({
+                        "width": $pct.html()
+                      }, data.speed || 3000, function() {
+
+                        $pct.css({
+                          "color": data.color,
+                          "opacity": 1
+                        });
+
+                      });
+
+                  }, data.delay || 0 );
+
+                });
+            }
+          };
+      }
+
+        methods.init();
     });
-  }
-});
+
+    // Initialize on page load
+
+  })( jQuery );
+}
+
+export { skills };
