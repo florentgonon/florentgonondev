@@ -8,6 +8,17 @@ $wordpress: rgb(233, 76, 130);
 $background-color: #f4f4f4;
 $body-text-color: #212121;
 
+
+#skill {
+  color: white;
+  background-color: #2B3436;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 80vh;
+}
+
 .skills {
   width: 80%;
   position: relative;
@@ -25,7 +36,7 @@ $body-text-color: #212121;
  dt {
       &:after {
         width: 100%;
-        background-color: #e0e0e0;
+        background-color: #5D636A;
         height: 0.6rem;
         content: "";
         display: block;
@@ -41,22 +52,22 @@ dd {
   top: -0.6rem;
   border-radius: 5px;
   &.ruby {
-    background: $ruby;
+    background: #9FFCDF;
   }
   &.javascript {
-    background: $javascript;
+    background: #9FFCDF;
   }
   &.postgresql {
-    background: $postgresql;
+    background: #9FFCDF;
   }
   &.html {
-    background: $html;
+    background: #9FFCDF;
   }
   &.css {
-    background: $css;
+    background: #9FFCDF;
   }
   &.wordpress {
-    background: $wordpress;
+    background: #9FFCDF;
   }
 }
 
