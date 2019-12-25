@@ -1,48 +1,52 @@
 function skills() {
+
   ;( function( $ ) {
-    "use strict";
+    $(window).scroll(function() {
+      if($(window).scrollTop() > 900) {
+        "use strict";
+        var $bars = $( ".bar" ),
+          methods = {
+            init: function() {
 
-    var $bars = $( ".bar" ),
-      methods = {
-        init: function() {
+              // Bind events
+              methods.bindEvents();
 
-          // Bind events
-          methods.bindEvents();
+            },
 
-        },
-        bindEvents: function() {
+            bindEvents: function() {
+              // Loop through each of the bars...
+                $bars.each( function() {
 
-          // Loop through each of the bars...
-          $bars.each( function() {
+                  var $bar = $( this ),
+                    $pct = $bar.find( ".pct" ),
+                    data = $bar.data( "bar" );
 
-            var $bar = $( this ),
-              $pct = $bar.find( ".pct" ),
-              data = $bar.data( "bar" );
+                  setTimeout( function() {
 
-            setTimeout( function() {
+                    $bar
+                      .css( "background-color", data.color )
+                      .animate({
+                        "width": $pct.html()
+                      }, data.speed || 3000, function() {
 
-              $bar
-                .css( "background-color", data.color )
-                .animate({
-                  "width": $pct.html()
-                }, data.speed || 3000, function() {
+                        $pct.css({
+                          "color": data.color,
+                          "opacity": 1
+                        });
 
-                  $pct.css({
-                    "color": data.color,
-                    "opacity": 1
-                  });
+                      });
+
+                  }, data.delay || 0 );
 
                 });
+            }
+          };
+      }
 
-            }, data.delay || 0 );
-
-          });
-
-        }
-      };
+        methods.init();
+    });
 
     // Initialize on page load
-    methods.init();
 
   })( jQuery );
 }
