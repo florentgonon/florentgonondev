@@ -1,19 +1,19 @@
 #skill {
   color: white;
   background-color: #2B3436;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // background-size: cover;
-  // -o-background-size: cover;
-  height: 80vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-#skills {
+#skills-bar {
   margin: 0 auto;
   width: 80%;
   max-width: 960px;
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 100px;
 
   li {
     position: relative;
@@ -32,11 +32,12 @@
     .bar-container {
       bottom: -8px;
       width: 100%;
-      background-color: #2B3436;
+      background-color: #5D636A;
       text-align: right;
 
       .bar {
         top: 0;
+        color: #9FFCDF;
       }
 
       .pct {
@@ -47,6 +48,66 @@
         transition: opacity 0.3s linear;
       }
     }
+  }
+}
+
+/* Circle Progress Bar styles */
+
+.skills-circle {
+  max-width: 960px;
+  margin: 0 auto;
+  // text-align: center;
+}
+
+.progress-circle {
+  // width: 33%;
+  justify-content: space-around ;
+}
+
+.progress-circle__svg {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 200px;
+}
+
+.progress-circle__bg {
+  fill: none;
+  stroke: #5D636A;
+  stroke-width: 1.8;
+}
+
+.progress-circle__inner {
+  fill: none;
+  stroke: #9FFCDF;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  animation: animate-round 1.5s ease-out forwards 1;
+  animation-play-state: paused;
+}
+.progress-circle.animate .progress-circle__inner{
+  animation-play-state: running;
+}
+
+.progress-circle__percentage {
+  fill: white;
+  font-family: 'Montserrat';
+  font-size: 4px;
+  text-anchor: middle;
+}
+
+.chart-text span {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@keyframes animate-round {
+  0% {
+    stroke-dasharray: 0 100;
   }
 }
 
