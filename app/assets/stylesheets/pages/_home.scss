@@ -1,3 +1,26 @@
+.scroll-up {
+  position: fixed;
+  z-index: 999;
+  bottom: 1.8em;
+  right: 1.8em;
+}
+
+.scroll-up a {
+    background-color: #ffc418;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    color: #2B3436;
+    font-size: 14px;
+    line-height: 28px;
+
+    &:hover {
+      color: #2B3436;
+    }
+}
+
 #skill {
   color: white;
   background-color: #2B3436;
