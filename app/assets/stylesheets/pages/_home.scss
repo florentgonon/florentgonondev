@@ -1311,26 +1311,55 @@ footer ul.quicklinks {
   }
 }
 
-.container-social i {
-  font-size: 60px;
-  color: white;
-  transition: color 0.30s ease-in-out, background-color 0.30s ease-in-out, border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
 
-  &:hover {
-    // color: #8c488e;
-    // transition: color 0.30s ease-in-out, background-color 0.30s ease-in-out, border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
-    cursor: pointer;
-    animation-name: bounce;
-    -moz-animation-name: bounce;
+.hover-effect1 {
+  // text-align: center;
+  margin: 0 auto;
+}
+
+.hover-effect1 ul {
+  margin-bottom: 0;
+}
+
+.hover-effect1 ul li {
+  display: inline-block;
+}
+
+
+
+.hover-effect1 ul li a {
+  font-size: 40px;
+  color: #2B3436;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+
+  .i-footer {
+    padding-top: 15px;
+    padding-right: 36px;
+
+    i {
+      position: absolute;
+    }
   }
+}
+
+.hover-effect1 ul li:hover a {
+  border-radius: 50%;
+  background: #fff;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: #2B3436;
 }
 
 
