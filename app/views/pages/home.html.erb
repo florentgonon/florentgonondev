@@ -444,11 +444,21 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-image">
-                                <h4><br>...</h4>
+                                <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt=""> -->
+                                <%= image_tag("download.png", :class => "img-works", height: "55%") %>
                             </div>
-                        </li> -->
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Mon Curriculum Vitae</h4>
+                                    <h4 class="subheading">Télécharger mon CV</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <%= link_to image_tag("CV.jpg", width: 80), pages_download_pdf_url %>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
