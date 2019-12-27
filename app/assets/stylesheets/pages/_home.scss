@@ -1,24 +1,101 @@
+.navbar {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  color: #FFF !important;
+  transition:
+    background-color 0.5s ease,
+    padding 0.5s ease;
+
+  &.solid-nav {
+    background-color: #2B3436;
+    color: black;
+    border-bottom: 3px solid white;
+    padding: 5px 50px;
+    transition:
+      background-color 0.5s ease,
+      padding 0.5s ease;
+  }
+}
+
+
 .scroll-up {
   position: fixed;
   z-index: 999;
   bottom: 1.8em;
   right: 1.8em;
-}
 
-.scroll-up a {
-    background-color: #ffc418;
+  a {
+    background-color: none;
     display: block;
     width: 28px;
     height: 28px;
     border-radius: 50%;
     text-align: center;
-    color: #2B3436;
+    color: transparent;
     font-size: 14px;
     line-height: 28px;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease,
+      padding 0.5s ease;
+  }
 
-    &:hover {
-      color: #2B3436;
+  &.solid-scroll {
+    position: fixed;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
+
+    a {
+      background-color: #2B3436;
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      line-height: 28px;
+      transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        padding 0.5s ease;
+
+      &:hover {
+        color: white;
+      }
     }
+  }
+
+  &.solid-scroll2 {
+    position: fixed;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
+
+    a {
+      background-color: white;
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      color: #2B3436;
+      font-size: 14px;
+      line-height: 28px;
+      transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        padding 0.5s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
 
 #skill {
@@ -714,9 +791,18 @@ section h3.section-subheading {
     }
 }
 
+.service-link-contact {
+  color: #E8B316;
+  font-weight: bold;
+
+  &:hover {
+    color: #E8B316;
+  }
+}
+
 .service-heading {
-    margin: 15px 0;
-    text-transform: none;
+  margin: 15px 0;
+  text-transform: none;
 }
 
 
