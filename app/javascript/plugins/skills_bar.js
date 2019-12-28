@@ -1,58 +1,31 @@
 function skills_bar() {
 
-  ;( function($) {
-    $(window).scroll(function() {
-      if($(window).scrollTop() > 1500) {
-        "use strict";
+    var skills = {
+    rb: 100,
+    js: 70,
+    sq: 90,
+    ht: 100,
+    cs: 100,
+    wp: 55
+  };
 
-        var $bars = $( ".bar" ),
-          methods = {
-            init: function() {
+  $(window).scroll(function() {
+    if($(window).scrollTop() > 1700) {
+      $.each(skills, function(key, value) {
+        var skillbar = $("." + key);
 
-              // Bind events
-              methods.bindEvents();
-
-            },
-            bindEvents: function() {
-
-              // Loop through each of the bars...
-              $bars.each( function() {
-
-                var $bar = $( this ),
-                  $pct = $bar.find( "span.pct" ),
-                  data = $bar.data( "bar" );
-
-                setTimeout( function() {
-
-                  $bar
-                    .css( "background-color", data.color )
-                    .animate({
-                      "width": $pct.html()
-                    }, data.speed || 3000,
-
-                    function() {
-                      $pct.css({
-                        "color": data.color,
-                        "opacity": 1,
-                      });
-                    });
-
-                }, data.delay || 0 );
-
-              });
-
-            }
-          };
-
-    methods.init();
-
-        }
-
-    });
-
-    // Initialize on page load
-
-  })(jQuery);
+        skillbar.animate(
+          {
+            width: value + "%"
+          },
+          3000,
+          function() {
+            $(".speech-bubble").fadeIn();
+          }
+        );
+      });
+    }
+  });
 }
 
 export { skills_bar };

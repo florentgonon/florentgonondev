@@ -146,42 +146,71 @@
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 100px;
-
-  li {
-    position: relative;
-    margin-bottom: 32px;
-    padding-left: 6px;
-
-    .bar-container,
-    .bar {
-      position: absolute;
-      left: 0;
-      height: 10px;
-      border-radius: 5px;
-      content: "";
-    }
-
-    .bar-container {
-      bottom: -8px;
-      width: 100%;
-      background-color: #5D636A;
-      text-align: right;
-
-      .bar {
-        top: 0;
-        color: #9FFCDF;
-      }
-
-      .pct {
-        position: absolute;
-        top: -19px;
-        right: 0;
-        opacity: 0;
-        transition: opacity 0.3s linear;
-      }
-    }
-  }
 }
+
+.bar {
+  margin: 2em auto;
+}
+
+.skill {
+  font-size: 16px;
+  margin-bottom: 0.25em;
+  font-family: 'Montserrat';
+}
+
+.speech-bubble {
+  font-size: 16px;
+  // line-height: 2em;
+  position: absolute;
+  top: -1.7em;
+  text-align: center;
+  min-width: 3em;
+  border-radius: 0.3em;
+  display: none;
+  color: white;
+}
+
+.ruby,
+.html,
+.css {
+  left: 95%;
+}
+
+.javascript {
+  left: calc(70% - 1.5em);
+}
+
+.sql {
+  left: calc(90% - 1.5em);
+}
+
+.wordpress {
+  left: calc(55% - 1.5em);
+}
+
+.speech-bubble:after {
+  // border: 0.5em solid transparent;
+  content: "";
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bar-outer {
+  height: 10px;
+  background: #5D636A;
+  position: relative;
+  border-radius: 5px;
+}
+
+.bar-inner {
+  width: 0;
+  height: 10px;
+  border-radius: 5px;
+  background: #9ffcdf;
+}
+
 
 /* Circle Progress Bar styles */
 
@@ -226,7 +255,7 @@
 .progress-circle__percentage {
   fill: white;
   font-family: 'Montserrat';
-  font-size: 4px;
+  font-size: 3px;
   text-anchor: middle;
 }
 
