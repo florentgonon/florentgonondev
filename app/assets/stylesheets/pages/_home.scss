@@ -20,6 +20,11 @@
   }
 }
 
+.link-scroll {
+  &:hover {
+    color: transparent;
+  }
+}
 
 .scroll-up {
   position: fixed;
@@ -50,7 +55,7 @@
     right: 1.8em;
 
     a {
-      background-color: #2B3436;
+      background-color: #ffc418;
       display: block;
       width: 28px;
       height: 28px;
@@ -70,32 +75,59 @@
     }
   }
 
-  &.solid-scroll2 {
-    position: fixed;
-    z-index: 999;
-    bottom: 1.8em;
-    right: 1.8em;
+  // &.solid-scroll1 {
+  //   position: fixed;
+  //   z-index: 999;
+  //   bottom: 1.8em;
+  //   right: 1.8em;
 
-    a {
-      background-color: white;
-      display: block;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      text-align: center;
-      color: #2B3436;
-      font-size: 14px;
-      line-height: 28px;
-      transition:
-        background-color 0.5s ease,
-        color 0.5s ease,
-        padding 0.5s ease;
+  //   a {
+  //     background-color: #2B3436;
+  //     display: block;
+  //     width: 28px;
+  //     height: 28px;
+  //     border-radius: 50%;
+  //     text-align: center;
+  //     color: white;
+  //     font-size: 14px;
+  //     line-height: 28px;
+  //     transition:
+  //       background-color 0.5s ease,
+  //       color 0.5s ease,
+  //       padding 0.5s ease;
 
-      &:hover {
-        color: white;
-      }
-    }
-  }
+  //     &:hover {
+  //       color: white;
+  //     }
+  //   }
+  // }
+
+  // &.solid-scroll2 {
+  //   position: fixed;
+  //   z-index: 999;
+  //   bottom: 1.8em;
+  //   right: 1.8em;
+
+  //   a {
+  //     background-color: white;
+  //     display: block;
+  //     width: 28px;
+  //     height: 28px;
+  //     border-radius: 50%;
+  //     text-align: center;
+  //     color: #2B3436;
+  //     font-size: 14px;
+  //     line-height: 28px;
+  //     transition:
+  //       background-color 0.5s ease,
+  //       color 0.5s ease,
+  //       padding 0.5s ease;
+
+  //     &:hover {
+  //       color: white;
+  //     }
+  //   }
+  // }
 }
 
 #skill {
