@@ -14,8 +14,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="list-nav">
             <li><a href="#services">Services</a></li>
-            <li><a href="#skill">Compétences</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skill">Compétences</a></li>
             <li><a href="#parcours">Parcours</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -144,56 +144,50 @@
       </div>
 
       <!-- Skills bar -->
-      <ul id="skills-bar">
-        <li>
-          Ruby (On Rails) <i class="far fa-gem"></i>
-          <div class="bar-container">
-            <span class="bar" data-bar='{ "color": "#9FFCDF", "delay": 400 }'>
-              <span class="pct">100%</span>
-            </span>
+      <div id="skills-bar">
+        <div class="bar">
+          <div class="skill">Ruby <i class="fas fa-gem"></i></div>
+          <div class="bar-outer">
+            <div class="speech-bubble ruby">100%</div>
+            <div class="bar-inner rb"></div>
           </div>
-        </li>
-        <li>
-          Javascript <i class="fab fa-js-square"></i>
-          <div class="bar-container">
-            <span class="bar" data-bar='{ "color": "#9FFCDF", "delay": 800 }'>
-              <span class="pct">70%</span>
-            </span>
+        </div>
+        <div class="bar">
+          <div class="skill">Javascript <i class="fab fa-js-square"></i></div>
+          <div class="bar-outer">
+            <div class="speech-bubble javascript">70%</div>
+            <div class="bar-inner js"></div>
           </div>
-        </li>
-        <li>
-          PostgreSQL <i class="fas fa-database"></i>
-          <div class="bar-container">
-            <span class="bar" data-bar='{ "color": "#9FFCDF", "delay": 600 }'>
-              <span class="pct">90%</span>
-            </span>
+        </div>
+        <div class="bar">
+          <div class="skill">PostgreSQL <i class="fas fa-database"></i></div>
+          <div class="bar-outer">
+            <div class="speech-bubble sql">90%</div>
+            <div class="bar-inner sq"></div>
           </div>
-        </li>
-        <li>
-          HTML5 <i class="fab fa-html5"></i>
-          <div class="bar-container">
-            <span class="bar" data-bar='{ "color": "#9FFCDF" }'>
-              <span class="pct">100%</span>
-            </span>
+        </div>
+        <div class="bar">
+          <div class="skill">HTML <i class="fas fa-database"></i></div>
+          <div class="bar-outer">
+            <div class="speech-bubble html">100%</div>
+            <div class="bar-inner ht"></div>
           </div>
-        </li>
-        <li>
-          CSS3 <i class="fab fa-css3-alt"></i> / SCSS <i class="fab fa-sass"></i>
-          <div class="bar-container">
-            <span class="bar" data-bar='{ "color": "#9FFCDF", "delay": 200 }'>
-              <span class="pct">100%</span>
-            </span>
+        </div>
+        <div class="bar">
+          <div class="skill">CSS <i class="fab fa-css3-alt"></i> / SCSS <i class="fab fa-sass"></i></div>
+          <div class="bar-outer">
+            <div class="speech-bubble css">100%</div>
+            <div class="bar-inner cs"></div>
           </div>
-        </li>
-        <li>
-          WordPress <i class="fab fa-wordpress"></i>
-          <div class="bar-container">
-            <span class="bar" data-bar='{ "color": "#9FFCDF", "delay": 1000 }'>
-              <span class="pct">55%</span>
-            </span>
+        </div>
+        <div class="bar">
+          <div class="skill">WordPress <i class="fab fa-wordpress"></i></div>
+          <div class="bar-outer">
+            <div class="speech-bubble wordpress">55%</div>
+            <div class="bar-inner wp"></div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -455,7 +449,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Mon Curriculum Vitae</h4>
-                                    <h4 class="subheading">Cliquer pour télécharger mon CV</h4>
+                                    <h4 class="subheading">Cliquer pour télécharger</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <%= link_to image_tag("CV.jpg", width: 80), pages_download_pdf_url %>

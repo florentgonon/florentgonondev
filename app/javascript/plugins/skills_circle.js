@@ -1,7 +1,7 @@
 function skills_circle() {
 
   $(window).scroll(function() {
-    if($(window).scrollTop() > 2200) {
+    if($(window).scrollTop() > 2300) {
       $(".progress-circle").each(function() {
        if ($(this).isInViewport()) {
          $(this).addClass('animate')
