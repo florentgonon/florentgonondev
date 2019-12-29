@@ -1,0 +1,92 @@
+footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #2B3436;
+    border-top: 3px solid white;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform:     translateY(-20px);
+    transform:         translateY(-20px)
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    transform:         translateY(-10px)
+  }
+}
+
+
+.hover-effect1 {
+  // text-align: center;
+  margin: 0 auto;
+}
+
+.hover-effect1 ul {
+  margin-bottom: 0;
+}
+
+.hover-effect1 ul li {
+  display: inline-block;
+}
+
+
+
+.hover-effect1 ul li a {
+  font-size: 40px;
+  color: #2B3436;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+
+  .i-footer {
+    padding-top: 15px;
+    padding-right: 36px;
+
+    i {
+      position: absolute;
+    }
+  }
+}
+
+.hover-effect1 ul li:hover a {
+  border-radius: 50%;
+  background: #fff;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: #2B3436;
+}
