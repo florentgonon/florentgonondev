@@ -1,4 +1,33 @@
-// Import your components CSS files here.
 @import "alert";
 @import "avatar";
+@import "btn-scrollup";
+@import "btn";
+
+
+// HEADER
+
+@import "header";
 @import "navbar";
+
+
+
+
+// SECTION
+
+@import "section-services";
+@import "section-portfolio";
+
+@import "section-skills";
+  @import "skills-bar";
+  @import "skills-circle";
+
+@import "section-parcours";
+@import "section-about";
+@import "section-contact";
+
+
+
+
+// FOOTER
+
+@import "footer";

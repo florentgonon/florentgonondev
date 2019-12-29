@@ -1,0 +1,80 @@
+#skill {
+  color: white;
+  background-color: #2B3436;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#skills-bar {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 100px;
+}
+
+.bar {
+  margin: 2em auto;
+}
+
+.skill {
+  font-size: 16px;
+  margin-bottom: 0.25em;
+  font-family: 'Montserrat';
+}
+
+.speech-bubble {
+  font-size: 16px;
+  // line-height: 2em;
+  position: absolute;
+  top: -1.7em;
+  text-align: center;
+  min-width: 3em;
+  border-radius: 0.3em;
+  display: none;
+  color: white;
+}
+
+.ruby,
+.html,
+.css {
+  left: 95%;
+}
+
+.javascript {
+  left: calc(70% - 1.5em);
+}
+
+.sql {
+  left: calc(90% - 1.5em);
+}
+
+.wordpress {
+  left: calc(55% - 1.5em);
+}
+
+.speech-bubble:after {
+  // border: 0.5em solid transparent;
+  content: "";
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bar-outer {
+  height: 10px;
+  background: #5D636A;
+  position: relative;
+  border-radius: 5px;
+}
+
+.bar-inner {
+  width: 0;
+  height: 10px;
+  border-radius: 5px;
+  background: #9ffcdf;
+}
