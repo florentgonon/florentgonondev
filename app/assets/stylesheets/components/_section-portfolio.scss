@@ -1,18 +1,20 @@
 .container-portfolio {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   margin: 0 auto;
   padding-bottom: 120px;
 }
 
 .container-portfolio2 {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   margin: 0 auto;
 }
 
 .project {
-  // position: relative;
+  position: relative;
   margin-top: 50px;
   width: 400px;
   height: 240px;
