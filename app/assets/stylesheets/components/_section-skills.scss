@@ -1,20 +1,20 @@
-.software-container-1, .software-container-2 {
+.software-container {
+  display: flex;
+  justify-content: space-around;
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
 }
 
-.software-container-2 {
-  max-width: 330px;
-  margin: 0 auto;
-  // text-align: center;
-}
-
 .img-software {
   height: 88px;
 }
 
-.software img {
+.software {
+  padding: 22px 5%;
+
+  img {
   vertical-align: baseline;
+  }
 }
