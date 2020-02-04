@@ -8,6 +8,11 @@ body {
     webkit-tap-highlight-color: #1ee2e7;
 }
 
+.row {
+  max-width: 100vw;
+  margin-left: 0;
+}
+
 ::-moz-selection {
     text-shadow: none;
     background: #1ee2e7;

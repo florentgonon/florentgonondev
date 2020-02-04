@@ -1,3 +1,7 @@
+#services {
+  width: 100%;
+}
+
 #services-description {
   max-width: 960px;
   margin: 0 auto;
@@ -15,4 +19,8 @@
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+
+.img-services {
+  height: 90%;
 }
