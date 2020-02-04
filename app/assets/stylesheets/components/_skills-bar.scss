@@ -38,10 +38,13 @@
   color: white;
 }
 
-.ruby,
+.ruby {
+  left: calc(90% - 4.5em);
+}
+
 .html,
 .css {
-  left: 95%;
+  left: calc(90% - 1.5em);
 }
 
 .javascript {

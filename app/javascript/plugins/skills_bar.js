@@ -1,11 +1,11 @@
 function skills_bar() {
 
     var skills = {
-    rb: 100,
+    rb: 85,
     js: 70,
     sq: 90,
-    ht: 100,
-    cs: 100,
+    ht: 90,
+    cs: 90,
     wp: 55
   };
 
