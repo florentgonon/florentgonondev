@@ -1,78 +1,121 @@
-@media(min-width:960px) {
-    header .intro-text {
-        padding-top: 7vh;
-        // padding-bottom: 8vh;
-    }
+// @media(min-width:960px) {
+//     header .intro-text {
+//         padding-top: 7vh;
+//         // padding-bottom: 8vh;
+//     }
 
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 24px;
-        font-style: italic;
-        line-height: 40px;
-    }
+//     header .intro-text .intro-lead-in {
+//         margin-bottom: 25px;
+//         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+//         font-size: 24px;
+//         font-style: italic;
+//         line-height: 40px;
+//     }
 
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        // text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 64px;
-        line-height: 75px;
-        font-weight: lighter;
+//     header .intro-text .intro-heading {
+//         margin-bottom: 50px;
+//         // text-transform: uppercase;
+//         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//         font-size: 64px;
+//         line-height: 75px;
+//         font-weight: lighter;
+//     }
+// }
+
+// @media(min-width:720px) {
+//     header .intro-text {
+//         padding-top: 7vh;
+//         // padding-bottom: 8vh;
+//     }
+
+//     header .intro-text .intro-lead-in {
+//         margin-bottom: 25px;
+//         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+//         font-size: 24px;
+//         font-style: italic;
+//         line-height: 40px;
+//     }
+
+//     header .intro-text .intro-heading {
+//         margin-bottom: 50px;
+//         // text-transform: uppercase;
+//         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//         font-size: 64px;
+//         line-height: 75px;
+//         font-weight: lighter;
+//     }
+// }
+
+// @media(min-width:540px) {
+//     header .intro-text {
+//         padding-top: 7vh;
+//         // padding-bottom: 8vh;
+//     }
+
+//     header .intro-text .intro-lead-in {
+//         margin-bottom: 25px;
+//         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+//         font-size: 24px;
+//         font-style: italic;
+//         line-height: 40px;
+//     }
+
+//     header .intro-text .intro-heading {
+//         margin-bottom: 50px;
+//         // text-transform: uppercase;
+//         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//         font-size: 64px;
+//         line-height: 75px;
+//         font-weight: lighter;
+//     }
+// }
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  header .intro-text {
+        padding-bottom: 0px !important;
+    .intro-heading{
+      // margin-bottom: 25px;
+      font-size: 30px;
     }
+  }
+  .text-editor-wrap {
+    max-width: 79vw;
+  }
+}
+@media (max-width: 768px) {
+  /* For a screen < 720px, this CSS will be read */
+  header .intro-text {
+        padding-bottom: 0px !important;
+
+        .intro-heading{
+      // margin-bottom: 25px;
+      font-size: 30px;
+    }
+  }
+  .text-editor-wrap {
+    max-width: 79vw;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  header .intro-text {
+        padding-bottom: 0px !important;
+
+    .intro-heading{
+      // margin-bottom: 25px;
+      font-size: 30px;
+    }
+  }
+  .text-editor-wrap {
+    max-width: 79vw;
+  }
 }
 
-@media(min-width:720px) {
-    header .intro-text {
-        padding-top: 7vh;
-        // padding-bottom: 8vh;
-    }
-
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 24px;
-        font-style: italic;
-        line-height: 40px;
-    }
-
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        // text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 64px;
-        line-height: 75px;
-        font-weight: lighter;
-    }
-}
-
-@media(min-width:540px) {
-    header .intro-text {
-        padding-top: 7vh;
-        // padding-bottom: 8vh;
-    }
-
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 24px;
-        font-style: italic;
-        line-height: 40px;
-    }
-
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        // text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 64px;
-        line-height: 75px;
-        font-weight: lighter;
-    }
-}
-
-#intro {
-  padding: 90px 0;
-}
+// #intro {
+//   // padding: 90px 0;
+//   height: 80%;
+// }
 
 header {
     text-align: center;
@@ -91,7 +134,8 @@ header {
 .text-editor-wrap {
   display: block;
   margin: auto;
-  max-width: 530px;
+  width: 530px;
+
   border-radius: 10px;
   // box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
   clear: both;
