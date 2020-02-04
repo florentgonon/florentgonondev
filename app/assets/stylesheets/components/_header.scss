@@ -74,24 +74,48 @@
   /* For a screen < 960px, this CSS will be read */
   header .intro-text {
         padding-bottom: 0px !important;
+    .intro-heading{
+      // margin-bottom: 25px;
+      font-size: 30px;
+    }
+  }
+  .text-editor-wrap {
+    max-width: 79vw;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   /* For a screen < 720px, this CSS will be read */
   header .intro-text {
         padding-bottom: 0px !important;
+
+        .intro-heading{
+      // margin-bottom: 25px;
+      font-size: 30px;
+    }
+  }
+  .text-editor-wrap {
+    max-width: 79vw;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   header .intro-text {
         padding-bottom: 0px !important;
+
+    .intro-heading{
+      // margin-bottom: 25px;
+      font-size: 30px;
+    }
+  }
+  .text-editor-wrap {
+    max-width: 79vw;
   }
 }
 
-#intro {
-  padding: 90px 0;
-}
+// #intro {
+//   // padding: 90px 0;
+//   height: 80%;
+// }
 
 header {
     text-align: center;
@@ -110,7 +134,8 @@ header {
 .text-editor-wrap {
   display: block;
   margin: auto;
-  max-width: 530px;
+  width: 530px;
+
   border-radius: 10px;
   // box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
   clear: both;
