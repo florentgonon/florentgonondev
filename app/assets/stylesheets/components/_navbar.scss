@@ -58,9 +58,10 @@
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 30px;
+  padding: 15px 0;
   font-size: 18px;
   line-height: 20px;
+  margin-right: 0;
 
   &:hover  {
     color: white !important;
