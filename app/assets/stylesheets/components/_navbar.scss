@@ -38,7 +38,7 @@
   border-width: 0 0 1px;
 }
 
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
   .navbar-fixed-top {
     border-radius: 0;
     position: fixed;
@@ -46,13 +46,19 @@
     left: 0;
     z-index: 1030;
   }
-}
+// }
 
 .navbar-custom .navbar-brand {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #FFF;
   margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-header {
+    margin: 0 auto;
+  }
 }
 
 .navbar-brand {
@@ -69,7 +75,7 @@
 }
 
 .collapse {
-  margin-right: 25px;
+  // margin-right: 25px;
 }
 
 .list-nav {
