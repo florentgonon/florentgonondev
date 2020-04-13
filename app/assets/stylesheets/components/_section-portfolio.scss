@@ -1,3 +1,8 @@
+.row-project {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -5,27 +10,31 @@
   align-items: center;
 }
 
+
 .container-portfolio {
   display: flex;
   justify-content: space-around;
-  max-width: 100vw;
+  // max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 120px;
+  // padding-bottom: 120px;
   flex-wrap: wrap;
 }
 
 .container-portfolio2 {
   display: flex;
   justify-content: space-around;
-  max-width: 100vw;
+  // max-width: 960px;
   margin: 0 auto;
+  text-align: center;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
 }
 
 .project {
   position: relative;
   margin-top: 50px;
-  height: 240px;
+  height: 200px;
 }
 
 .overlay {
@@ -44,14 +53,15 @@
 
 .img-project {
   border-radius: 5px;
-  width: 300px;
+  width: 290px;
+  object-fit: cover;
   height: 100%;
 }
 
 .title-project {
   position: absolute;
   width: 100%;
-  top: 96px;
+  top: 74px;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
@@ -62,13 +72,13 @@
 }
 
 .project:hover .title-project {
-  top: 50px;
+  top: 40px;
 }
 
 .button {
   position: absolute;
   width: 100%;
-  top: 160px;
+  top: 120px;
   text-align: center;
   opacity: 0;
   transition: opacity .35s ease;

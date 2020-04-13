@@ -7,6 +7,10 @@
   }
 }
 
+.form-control:focus {
+  border: none;
+}
+
 section#contact h3.section-subheading {
   color: white !important;
 }
