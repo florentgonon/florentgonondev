@@ -1,6 +1,6 @@
 function typed() {
   var options = {
-    strings: ["$ Développeur Web Fullstack...<br> $ ... en Freelance ✈️"],
+    strings: ["$ Développeur Web Fullstack...<br> $ ... chez Ma Ville Mon Shopping 🖥"],
     typeSpeed: 70,
     startDelay: 1000,
     backSpeed: 50,
