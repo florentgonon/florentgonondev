@@ -35,11 +35,22 @@
                 </div>
               </div>
               <div class="clearfix"></div>
+
+              <!-- <div class="calcul">
+                <p><%= @first_number %> + <%= @second_number %></p>
+                <p></p>
+              </div> -->
+
+              <div class="recaptcha">
+                <%= recaptcha_tags %>
+              </div>
+
               <div class="col-lg-12 text-center" style="height: 147px";>
                 <div id="success"></div>
                 <button id="my-form-button" class="mail-btn" type="submit">Envoyer</button>
                 <p id="my-form-status"></p>
               </div>
+
             </div>
           </form>
         </div>
