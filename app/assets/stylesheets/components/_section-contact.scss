@@ -11,6 +11,10 @@
   border: none;
 }
 
+.recaptcha {
+  margin: 0 auto;
+}
+
 section#contact h3.section-subheading {
   color: white !important;
 }
@@ -111,7 +115,6 @@ section#contact .text-danger {
     color 1s .5s,
     border 1s 1s;
   font-family: "Montserrat", sans-serif !important;
-  margin-top: 75px;
   margin-bottom: -17px;
 }
 .mail-btn:before,

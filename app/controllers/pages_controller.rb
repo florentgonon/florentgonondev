@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
   def home
-    # if verify_recaptcha
-    #   redirect_to root_path
-    # end
+    if verify_recaptcha
+      redirect_to root_path
+    end
   end
 
   def download_pdf
